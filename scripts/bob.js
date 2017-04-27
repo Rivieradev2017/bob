@@ -10,6 +10,7 @@ module.exports =  (robot) =>  {
   });
 
   robot.router.get('/hey/bob', (req, res) => {
+    console.log(req.body)
     res.send({message:"💙"});
   });
 };
