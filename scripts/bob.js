@@ -15,4 +15,11 @@ module.exports =  (robot) =>  {
     console.log(req.body)
     res.send({message:"💙"});
   });
+
+  robot.router.post('/hey/bob', (req, res) => {
+    robot.messageRoom('general', req.body);
+    res.status(200).end()
+  })
+
+
 };
