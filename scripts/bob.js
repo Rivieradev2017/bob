@@ -12,12 +12,15 @@ module.exports =  (robot) =>  {
   });
 
   robot.router.get('/hey/bob', (req, res) => {
-    console.log(req.body)
+    robot.messageRoom('general', "💙");
+    console.log("💙")
     res.send({message:"💙"});
   });
 
   robot.router.post('/hey/bob', (req, res) => {
-    robot.messageRoom('general', req.body);
+    robot.messageRoom('general', req);
+    console.log(req)
+    //res.send({message:"💙"});
     res.status(200).end()
   })
 

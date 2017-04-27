@@ -13,4 +13,5 @@ ROCKETCHAT_URL=http://rocket.chat.cleverapps.io
 ROCKETCHAT_USER=bob
 ```
 
-http://bob.the.bot.cleverapps.io/
+
+http://bob.the.bot.cleverapps.io/hey/bob
