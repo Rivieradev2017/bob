@@ -5,6 +5,8 @@
 
 module.exports =  (robot) =>  {
 
+  res.send({message:"💙"});
+
   robot.hear(/hello bob/, (res) => {
     res.send(`bonjour ${res.message.user.name}`);
   });
